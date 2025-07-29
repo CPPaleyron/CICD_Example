@@ -1,4 +1,5 @@
 import unittest
+import os
 
 class mockObj():
     def __init__(self, name:str, age:int):
@@ -15,8 +16,11 @@ class ExampleTestCases(unittest.TestCase):
 
     def test_object(self):
         obj1 = mockObj("Chris", 20)
-        obj2 = mockObj("Lukas", 28)
+        obj2 = mockObj("Chris", 20)
         self.assertEqual(obj1, obj2, "Given Objects are not equal")
+
+    def test_file_existing(self):
+        self.assertTrue(os.path.exists("./test_file.txt"), "File doesn't exist")
 
 if __name__ == '__main__':
     unittest.main()
