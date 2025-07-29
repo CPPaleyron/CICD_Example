@@ -14,7 +14,7 @@ class ExampleTestCases(unittest.TestCase):
         self.assertEqual("string is the same", "string is the same", "strs are not equal")
 
     def test_object(self):
-        obj1 = mockObj("Chris", 27)
+        obj1 = mockObj("Chris", 20)
         obj2 = mockObj("Lukas", 28)
         self.assertEqual(obj1, obj2, "Given Objects are not equal")
 
