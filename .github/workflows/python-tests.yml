@@ -3,6 +3,7 @@ name: Python Unit Tests
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   tests:
