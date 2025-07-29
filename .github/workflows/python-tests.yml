@@ -15,7 +15,7 @@ jobs:
 
     # After our code is on the runner, we need to install python on it
     - name: Set up Python
-      uses: actions/setup-python
+      uses: actions/setup-python@v5
       with:
         python-version: '3.13'
     
