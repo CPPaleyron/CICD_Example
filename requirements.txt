@@ -1,4 +1,4 @@
 mkdocs
-mkdocstring[python]
+"mkdocstring[python]"
 mkdocs-material
 mkdocs-autoapi
