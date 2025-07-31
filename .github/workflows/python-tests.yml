@@ -32,11 +32,18 @@ jobs:
         python -m unittest discover -s src/tests -p "test_*.py"
 
     
-    - name: Deploy to GitHub Pages
+    - name: Generate documentation
       if: success()
       run: |
         python -m mkdocs build
-        python -m mkdocs gh-deploy --force
+
+    
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./site
+
 
 
     
