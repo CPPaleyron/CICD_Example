@@ -34,7 +34,9 @@ jobs:
     
     - name: Deploy to GitHub Pages
       if: success()
-      run: mkdocs gh-deploy --force
+      run: |
+        python -m mkdocs build
+        python -m mkdocs gh-deploy --force
 
 
     
