@@ -32,6 +32,12 @@ jobs:
         python -m unittest discover -s src/tests -p "test_*.py"
 
     
+    - name: Deploy to GitHub Pages
+      if: success()
+      run: mkdocs gh-deploy --force
+
+
+    
     # - name: Deploy to server via SSH
       # if: success()
       # uses: appleboy/scp-action@v0.1.4
