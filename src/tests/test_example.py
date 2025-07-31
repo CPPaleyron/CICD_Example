@@ -8,11 +8,6 @@ This test suite includes:\n
 - A test for equality of two mockObj instances.\n
 - A check for the existence of a specific file on disk.
 """
-
-
-import unittest
-import os
-
 import os
 import unittest
 
@@ -78,7 +73,8 @@ class ExampleTestCases(unittest.TestCase):
         """
         Tests whether a specific file exists in the current directory.
         """
-        self.assertTrue(os.path.exists("../../test_file.txt"), "File doesn't exist")
+        #print("Current dir:", os.getcwd())
+        self.assertTrue(os.path.exists("test_file.txt"), "File doesn't exist")
 
 
 # if __name__ == '__main__':
