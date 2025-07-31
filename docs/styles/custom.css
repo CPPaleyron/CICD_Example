@@ -1,0 +1,25 @@
+
+.doc .doc-class {
+  border-left: 4px solid #4caf50;
+  background-color: #f1f8e9;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+/* Highlight functions */
+.doc .doc-function {
+  border-left: 4px solid #2196f3;
+  /* background-color: #e3f2fdbd; */
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+.doc .doc-class h2 code{
+    background-color: #50df50bd;
+    border-radius: 10px;
+}
+
+.doc .doc-function h3 code{
+    background-color: #80d1f1bd;
+    border-radius: 10px;
+}

@@ -1,0 +1,28 @@
+site_name: CICD_Example Project
+
+theme:
+  name: "material"
+  palette:
+    primary: black
+  logo: assets/logo/hegele_logo_transparent.png
+
+extra_css:
+  - styles/custom.css
+
+markdown_extensions:
+  - admonition
+  - codehilite
+
+plugins:
+  - search
+  - mkdocs-autoapi:
+      autoapi_add_nav_entry: Reference
+      autoapi_dir: src/
+  - mkdocstrings:
+      handlers:
+          python:
+            paths:
+              - src
+
+nav:
+  - Example Documentation: index.md
