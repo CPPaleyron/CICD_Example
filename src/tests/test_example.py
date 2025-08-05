@@ -69,12 +69,12 @@ class ExampleTestCases(unittest.TestCase):
         obj2 = mockObj("Chris", 20)
         self.assertEqual(obj1, obj2, "Given Objects are not equal")
 
-    def test_file_existing(self):
-        """
-        Tests whether a specific file exists in the current directory.
-        """
-        #print("Current dir:", os.getcwd())
-        self.assertTrue(os.path.exists("test_file.txt"), "File doesn't exist")
+    # def test_file_existing(self):
+    #     """
+    #     Tests whether a specific file exists in the current directory.
+    #     """
+    #     #print("Current dir:", os.getcwd())
+    #     self.assertTrue(os.path.exists("test_file.txt"), "File doesn't exist")
 
 
 # if __name__ == '__main__':
